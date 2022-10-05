@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -14,11 +15,6 @@ export default function Home() {
         <h1 className={styles.title}>
           Welcome to Space Infinity
         </h1>
-        <div className={styles.welcome_menu}>
-          <div>Solar System</div>
-          <div>Mars</div>
-          <div>More</div>  
-        </div>
       </main>
 
       <footer className={styles.footer}>

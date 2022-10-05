@@ -53,19 +53,3 @@
 .description {
   text-align: center;
 }
-
-.welcome_menu{
-  display: flex;
-}
-
-.welcome_menu > div{
-  width: 110px;
-  height: 110px;
-  line-height: 110px;
-  border-radius: 50%;
-  text-align: center;
-  background: rgb(255,255,255);
-  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,250,250,1) 58%, rgba(247,202,104,1) 100%);
-  margin-top: 50px;
-  margin-left: 20px;
-}
