@@ -2,6 +2,7 @@
   padding: 0 2rem;
   background-color: #000f;
   background-image: url('../public/images/universe.png');
+  min-height: 100vh;
 }
 
 .main {

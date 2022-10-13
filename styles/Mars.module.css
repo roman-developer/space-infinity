@@ -1,0 +1,14 @@
+.container {
+  padding: 0 2rem;
+  background-color: #e8c06f;
+  min-height: 100vh;
+}
+
+.main{
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.item{
+  padding: 2rem;
+}
