@@ -27,7 +27,7 @@ export default function Mars({photos}) {
 }
 
 export async function getStaticProps() {
-  const api_url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=GMOy1Y8tMJWiwEGWmMy7FjaDhciLnX3m1kh6d6lB`
+  const api_url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=${process.env.NEXT_PUBLIC_NASA_API_KEY}`
   const res = await
   fetch(api_url);
   const photos = await res.json();
