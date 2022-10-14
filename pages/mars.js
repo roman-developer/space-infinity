@@ -1,26 +1,16 @@
 import styles from '../styles/Mars.module.css'
-import Image from 'next/image';
+import Card from '../components/Card';
 
 export default function Mars({photos}) {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
         <h1>Mars Rover Photos</h1>
-        { photos.photos.map((photo) => (
-          <div key={photo.id} className={styles.item}>
-            <Image 
-              alt={`Image for ${photo.id}`}
-              src={photo.img_src}
-              layout='responsive'
-              width={100}
-              height={100}
-            />
-            <p>Sol: {photo.sol}</p>
-            <p>Camera: {photo.camera.full_name}</p>
-            <p>Date: {photo.earth_date}</p>
-            <p>Rover: {photo.rover.name}</p>
-          </div>
-        )) }
+        <div className={styles.grid_photos}>
+          { photos.photos.map((photo) => (
+            <Card key={photo.id} img_src={photo.img_src} sol={photo.sol} camera={photo.camera.full_name} date={photo.earth_date} rover={photo.rover.name}/>
+          )) }
+        </div>
       </main>      
     </div>
   )
