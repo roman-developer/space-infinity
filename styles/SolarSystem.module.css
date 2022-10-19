@@ -1,0 +1,255 @@
+.container {
+  padding: 0 2rem;
+  min-height: 100vh;
+  background-color: #000f;
+  background-image: url('../public/images/background-space.jpeg');
+  background-size: cover;
+}
+
+.main{
+  min-height: 100vh;
+  padding: 4rem 0;
+}
+
+.title {
+  color: #ffff;
+}
+
+.tooltip{
+  position: relative;
+  top: 120%;
+  left: 25%;
+  background-color: #ffffff;
+  padding: 1em;
+  width: 90px;
+  border-radius: 20%;
+  visibility: hidden;
+}
+
+.sun {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 15em;
+  height: 15em;
+  background: #fbcc15;
+  background: radial-gradient(circle, #fbcc15 40%, #edf00a 80%);
+  border-radius: 50%;
+}
+
+.sun:hover .tooltip {
+  visibility: visible;
+}
+
+.mercury {
+  position: absolute;
+  top: 51%;
+  left: 29%;
+  width: 1.5em;
+  height: 1.5em;
+  background: #f9f3aa;
+  background: linear-gradient(351deg, #f9f3aa 0%, #ab5fa7 61%);
+  border-radius: 50%;
+}
+
+.mercury:hover .tooltip {
+  visibility: visible;
+}
+
+.venus {
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  width: 2.2em;
+  height: 2.2em;
+  background: #f9f3aa;
+  background: linear-gradient(351deg, #f9f3aa 0%, #429409 61%);
+  border-radius: 50%;
+}
+
+.venus:hover .tooltip {
+  visibility: visible;
+}
+
+.earth {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+  width: 2.5em;
+  height: 2.5em;
+  background: #ffffff;
+  background: linear-gradient(351deg, #ffffff 0%, #3838db 61%);
+  border-radius: 50%;
+}
+
+.earth:hover .tooltip {
+  visibility: visible;
+}
+
+.mars {
+  position: absolute;
+  top: 50%;
+  left: 45%;
+  width: 2.3em;
+  height: 2.3em;
+  background: #f4920e;
+  background: linear-gradient(351deg, #f4920e 0%, #fe0707 61%);
+  border-radius: 50%;
+}
+
+.mars:hover .tooltip {
+  visibility: visible;
+}
+
+
+.jupiter {
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  width: 6em;
+  height: 6em;
+  background: #b1a390;
+  background: linear-gradient(55deg, #b1a390 30%, #fab863 50%);
+  border-radius: 50%;
+}
+
+.jupiter:hover .tooltip {
+  visibility: visible;
+}
+
+
+.saturn {
+  position: absolute;
+  top: 47%;
+  left: 60%;
+  width: 5.7em;
+  height: 5.7em;
+  background: #faf763;
+  background: linear-gradient(180deg, #faf763 26%, #2f2e2d 88%);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.saturn:hover .tooltip {
+  visibility: visible;
+}
+
+.saturnDisc {
+  position: relative;
+  top: 35%;
+  right: 40%;
+  width: 10.5em;
+  height: 2em;
+  background: rgb(250,247,99);
+  background: radial-gradient(circle, rgba(250,247,99,0.11668417366946782) 50%, rgba(147,146,144,1) 100%);
+  border-radius: 50%;
+  z-index: 0;
+  transform: rotate(-20deg);
+}
+
+.uranus {
+  position: absolute;
+  top: 49.5%;
+  left: 70%;
+  width: 3.7em;
+  height: 3.7em;
+  background: #3bc1b2;
+  background: linear-gradient(180deg, #3bc1b2 26%, #018279 88%);
+  border-radius: 50%;
+}
+
+.uranus:hover .tooltip {
+  visibility: visible;
+}
+
+
+.neptune {
+  position: absolute;
+  top: 50%;
+  left: 76%;
+  width: 3.1em;
+  height: 3.1em;
+  background: #01ccd3;
+  background: linear-gradient(93deg, #01ccd3 26%, #0ab6f0 88%);
+  border-radius: 50%;
+}
+
+.neptune:hover .tooltip {
+  visibility: visible;
+}
+
+@media (max-width: 1200px) {
+  .mercury {
+    top: 35%;
+    left: 25%;
+  }
+  .venus {
+    top: 30%;
+    left: 45%;
+  }
+  .earth {
+    top: 40%;
+    left: 65%;
+  }
+  .mars {
+    top: 50%;
+    left: 75%;
+  }
+  .jupiter{
+    top: 70%;
+    left: 70%;
+  }
+  .saturn{
+    top: 85%;
+    left: 40%;
+  }
+  .uranus{
+    top: 85%;
+    left: 15%;
+  }
+  .neptune{
+    top: 95%;
+    left: 10%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sun{
+    top: 50%;
+    left: 20%;
+    width: 10em;
+    height: 10em;
+  }
+  .mercury {
+    top: 45%;
+    left: 25%;
+  }
+  .venus {
+    top: 42%;
+    left: 45%;
+  }
+  .earth {
+    top: 40%;
+    left: 70%;
+  }
+  .mars {
+    top: 55%;
+    right: 75%;
+  }
+  .jupiter{
+    top: 70%;
+    left: 70%;
+  }
+  .saturn{
+    top: 85%;
+    left: 40%;
+  }
+  .uranus{
+    top: 85%;
+    left: 15%;
+  }
+  .neptune{
+    top: 95%;
+    left: 10%;
+  }
+}
