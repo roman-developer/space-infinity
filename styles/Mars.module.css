@@ -20,3 +20,15 @@
   grid-row-gap: .5em;
   grid-column-gap: 1em;
 }
+
+@media (max-width: 768px) {
+  .grid_photos{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid_photos{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

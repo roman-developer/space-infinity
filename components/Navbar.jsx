@@ -6,7 +6,7 @@ const MENU_LIST = [
   { text: "Home", href: "/" },
   { text: "Solar System", href: "/solar_system" },
   { text: "Mars", href: "/mars" },
-  { text: "More", href: "/more" }
+  { text: "APOD", href: "/apod" }
 ];
 
 const Navbar = ()  => {
