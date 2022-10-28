@@ -21,6 +21,20 @@
   grid-column-gap: 1em;
 }
 
+.pagination{
+  display: inline;
+}
+.pagination button{
+  background-color: #ffff;
+  border-style: none;
+  padding: 6px;
+}
+
+.currentPage{
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 @media (max-width: 768px) {
   .grid_photos{
     grid-template-columns: repeat(2, 1fr);
